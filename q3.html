@@ -7,19 +7,30 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
+
+<div id="mobile-msg"><b>VIEW ON DESKTOP <br>FOR INTERACTIVE CHEAT SHEET</b></div>
+
 <div id="page-wrap">
 
 <a href="index.html" style="text-decoration: none"><header>
-	<i>POP QUIZ : AM I ANTI-RACIST ENOUGH?</i> 
+	<i>THE ANTI-RACIST POP QUIZ</i> 
 </header></a>
 
 
-
-
+<div class="links">
+<a href="https://www.pewsocialtrends.org/2019/04/09/race-in-america-2019/" target="_blank">
+	<div id="views-on-race">GETTING ON THE SAME PAGE</div></a>	
+<a href="https://lettersforblacklives.com/about-the-letter-ed27ea67eb2e" target="_blank">
+	<div id="translations">TRANSLATIONS</div></a>
+<a href="https://www.nytimes.com/2019/08/17/opinion/sunday/cancel-culture-call-out.html" target="_blank">
+	<div id="call-in">CALL-IN CULTURE</div></a>
+<a href="https://www.latimes.com/projects/george-floyd-protests-responses/" target="_blank">
+	<div id="why-we-protest">WHY WE PROTEST</div></a>
+</div>
 
 <section>
 <ul>
-	<h2>HOW DO YOU FEEL ABOUT SPEAKING UP?</h2>
+	<h2>3. HOW DO YOU FEEL ABOUT SPEAKING UP?</h2>
 
 	<div class="3-1"><input type="checkbox" id="3-1"><label for="3-1"> 📢 I want to join the conversation </label></div>
 	<div class="3-2"><input type="checkbox" id="3-2"><label for="3-2"> 💡 Doubles as a great marketing opportunity </label></div>
@@ -44,28 +55,57 @@
 <script>
 	$(document).ready(function() {
 
+		$('#views-on-race').hide();
+		$('#translations').hide();
+		$('#call-in').hide();
+		$('#why-we-protest').hide();
+
 		$('.3-1').click(function() {
 			$('body').css("background-image", "url('images/3-1.jpg')");
+			$('#views-on-race').show();
+			$('#translations').hide();
+			$('#call-in').hide();
+			$('#why-we-protest').show();
 		});
 
 		$('.3-2').click(function() {
 			$('body').css("background-image", "url('images/3-2.gif')");
+			$('#views-on-race').hide();
+			$('#translations').hide();
+			$('#call-in').hide();
+			$('#why-we-protest').hide();
 		});
 
 		$('.3-3').click(function() {
 			$('body').css("background-image", "url('images/3-3.gif')");
+			$('#views-on-race').hide();
+			$('#translations').hide();
+			$('#call-in').hide();
+			$('#why-we-protest').hide();
 		});
 
 		$('.3-4').click(function() {
 			$('body').css("background-image", "url('images/3-4.jpg')");
+			$('#views-on-race').hide();
+			$('#translations').show();
+			$('#call-in').show();
+			$('#why-we-protest').hide();
 		});
 
 		$('.3-5').click(function() {
 			$('body').css("background-image", "url('images/3-5.png')");
+			$('#views-on-race').hide();
+			$('#translations').hide();
+			$('#call-in').hide();
+			$('#why-we-protest').hide();
 		});
 
 		$('.3-6').click(function() {
 			$('body').css("background-image", "url('images/3-6.jpg')");
+			$('#views-on-race').hide();
+			$('#translations').hide();
+			$('#call-in').hide();
+			$('#why-we-protest').hide();
 		});
 
 	});

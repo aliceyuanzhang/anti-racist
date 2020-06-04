@@ -7,20 +7,41 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
+
+<div id="mobile-msg"><b>VIEW ON DESKTOP <br>FOR INTERACTIVE CHEAT SHEET</b></div>
+
 <div id="page-wrap">
 
 <a href="index.html" style="text-decoration: none"><header>
-	<i>POP QUIZ : AM I ANTI-RACIST ENOUGH?</i> 
+	<i>THE ANTI-RACIST POP QUIZ</i> 
 </header></a>
 
+<div class="links">
+<a href="https://native-land.ca/" target="_blank">
+	<div id="stolen-land">STOLEN LAND</div></a>
+<a href="https://www.wrcbtv.com/story/42196289/national-security-adviser-i-dont-think-theres-systemic-racism-in-us-police-forces" target="_blank">
+	<div id="denial">DENIAL</div></a>	
+<a href="https://www.instagram.com/p/CA_oN7Ehqy6/" target="_blank">
+	<div id="budget-cuts">BUDGET CUTS</div></a>
+<a href="https://drive.google.com/file/d/1Jyfn4Wd2i6bRi12ePghMHtX3ys1b7K1A/view?usp=sharing" target="_blank">
+	<div id="public-health">WHITE SUPREMACY: A LETHAL PUBLIC HEALTH ISSUE</div></a>
+<a href="https://www.trtworld.com/opinion/how-america-s-largest-corporations-loot-black-communities-36867" target="_blank">
+	<div id="corporations-loot">CORPORATIONS LOOT TOO</div></a>
+<a href="https://www.theatlantic.com/health/archive/2020/06/why-people-loot/612577/" target="_blank">
+	<div id="complexities">GETTING COMFORTABLE WITH COMPLEXITY</div></a>
+<a href="https://www.reddit.com/r/Sacramento/comments/gu04e6/in_light_of_the_looting_discourse_going_on_in/" target="_blank">
+	<div id="baldwin">BALDWIN EXPLAINS</div></a>
+<a href="https://chainsawsuit.com/wp-content/uploads/2016/07/20160707_allhousesredux.png" target="_blank">
+	<div id="all-houses-matter">"ALL HOUSES MATTER"</div></a>
 
+</div>
 
 
 <section>
 <ul>
-<h2>HOW DO YOU FEEL ABOUT THE PROTESTS?</h2>
+<h2>2. HOW DO YOU FEEL ABOUT THE PROTESTS?</h2>
 
-	<div class="2-1"><input type="checkbox" id="2-1"><label for="2-1"> ✊ Call attention to systemic racism! </label></div>
+	<div class="2-1"><input type="checkbox" id="2-1"><label for="2-1"> ✊ Call attention to systemic racism </label></div>
 	<div class="2-2"><input type="checkbox" id="2-2"><label for="2-2"> ✊ Justice for George Floyd </label></div>
 	<div class="2-3"><input type="checkbox" id="2-3"><label for="2-3">  😕 Do protests make a difference? </label></div>
 	<div class="2-4"><input type="checkbox" id="2-4"><label for="2-4">  😨 But what about covid-19? </label></div>
@@ -42,32 +63,97 @@
 <script>
 	$(document).ready(function() {
 
+		$('#stolen-land').hide();
+		$('#denial').hide();
+		$('#budget-cuts').hide();
+		$('#public-health').hide();
+		$('#corporations-loot').hide();
+		$('#complexities').hide();
+		$('#baldwin').hide();
+		$('#all-houses-matter').hide();
+
 		$('.2-1').click(function() {
 			$('body').css("background-image", "url('images/2-1.jpg')");
+			$('#stolen-land').show();
+			$('#denial').show();
+			$('#budget-cuts').hide();
+			$('#public-health').hide();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-2').click(function() {
 			$('body').css("background-image", "url('images/2-2.gif')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').hide();
+			$('#public-health').hide();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-3').click(function() {
 			$('body').css("background-image", "url('images/2-3.gif')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').show();
+			$('#public-health').hide();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-4').click(function() {
 			$('body').css("background-image", "url('images/2-4.gif')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').hide();
+			$('#public-health').show();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-5').click(function() {
 			$('body').css("background-image", "url('images/2-5.jpg')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').hide();
+			$('#public-health').hide();
+			$('#corporations-loot').show();
+			$('#complexities').show();
+			$('#baldwin').show();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-6').click(function() {
 			$('body').css("background-image", "url('images/2-6.jpg')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').hide();
+			$('#public-health').hide();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').hide();
 		});
 
 		$('.2-7').click(function() {
 			$('body').css("background-image", "url('images/2-7.jpg')");
+			$('#stolen-land').hide();
+			$('#denial').hide();
+			$('#budget-cuts').hide();
+			$('#public-health').hide();
+			$('#corporations-loot').hide();
+			$('#complexities').hide();
+			$('#baldwin').hide();
+			$('#all-houses-matter').show();
 		});
 
 	});
