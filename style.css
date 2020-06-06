@@ -51,7 +51,7 @@
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     body {    
@@ -127,9 +127,9 @@ footer {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #answer {
-    padding:25px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding:22px;
+    padding-left: 18vw;
+    padding-right: 18vw;
 }
 
   #page-wrap {
@@ -154,9 +154,6 @@ section {
 ul {
     padding: 0;
     list-style-type: none;
-}
-body {
-    background-size: 75%;
 }
 
 #mobile-msg{
