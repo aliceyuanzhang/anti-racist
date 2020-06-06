@@ -8,19 +8,6 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<div id="mobile-msg"><b>VIEW ON DESKTOP <br>FOR INTERACTIVE CHEAT SHEET</b></div>
-
-<div class="links">
-<a href="https://www.pewsocialtrends.org/2019/04/09/race-in-america-2019/" target="_blank">
-	<div id="views-on-race">GETTING ON THE SAME PAGE</div></a>	
-<a href="https://lettersforblacklives.com/about-the-letter-ed27ea67eb2e" target="_blank">
-	<div id="translations">TRANSLATIONS</div></a>
-<a href="https://www.nytimes.com/2019/08/17/opinion/sunday/cancel-culture-call-out.html" target="_blank">
-	<div id="call-in">CALL-IN CULTURE</div></a>
-<a href="https://www.latimes.com/projects/george-floyd-protests-responses/" target="_blank">
-	<div id="why-we-protest">WHY WE PROTEST</div></a>
-</div>
-
 <body>
 <div id="page-wrap">
 
@@ -28,93 +15,63 @@
 	<i>THE ANTI-RACIST POP QUIZ</i> 
 </header></a>
 
+
 <section>
-<ul>
-	<h2>3. HOW DO YOU FEEL ABOUT SPEAKING UP?</h2>
-
-	<div class="3-1"><input type="checkbox" id="3-1"><label for="3-1"> 📢 I want to join the conversation </label></div>
-	<div class="3-2"><input type="checkbox" id="3-2"><label for="3-2"> 💡 Doubles as a great marketing opportunity </label></div>
-	<div class="3-3"><input type="checkbox" id="3-3"><label for="3-3"> 🔁 Social media is a powerful tool for sharing info </label></div>
-	<div class="3-4"><input type="checkbox" id="3-4"><label for="3-4"> 👯 Ready to start some uncomfortable conversations </label></div>
-	<div class="3-5"><input type="checkbox" id="3-5"><label for="3-5"> ⬛ #blackouttuesday! </label></div>
-	<div class="3-6"><input type="checkbox" id="3-6"><label for="3-6">🤐 I don’t want to take up space or say the wrong thing </label></div>
-
-</ul>
-
+<h2>3. WHY WAS THE POLICE INSTITUTION CREATED?</h2>
 <br>
-	<a href="q2.html" style="text-decoration: none; font-size: 40px">◄</a> &nbsp; <a href="q4.html" style="text-decoration: none; font-size: 40px">►</a>
-<br>	
+<div class="options">
+	<div id="1-1" style="font-size: 18px; cursor: pointer"> To protect merchant property </div>
+	<br>
+	<div id="1-2" style="font-size: 18px; cursor: pointer"> To preserve the slavery system </div>
+</div>
 <br>
+
 </section>
 
+<div id="answer"><br><br>
+	Both. In the 19th century, affluent whites wanted to protect their property and prevent slave revolts, so they leveraged political connections to create the publicly-funded police. <br><br><br> 
+</div><br>
 
+<div id="navigation" style="text-decoration: none; font-size: 24px; font-weight: bolder; font-family: sans-serif">
+<a href="q2.html" style="color: white">BACK</a> &nbsp;&nbsp; <a href="https://time.com/4779112/police-history-origins/" style="color: white" target="_blank">?</a> &nbsp;&nbsp; <a href="q4.html" style="color: white"> NEXT </a>
+</div>
 
 </div>
 </body>
 
+
+
 <script>
 	$(document).ready(function() {
+		$('#answer').hide();
+		$('#navigation').hide();
 
-		$('#views-on-race').hide();
-		$('#translations').hide();
-		$('#call-in').hide();
-		$('#why-we-protest').hide();
 
-		$('.3-1').click(function() {
-			$('body').css("background-image", "url('images/3-1.jpg')");
-			$('#views-on-race').show();
-			$('#translations').hide();
-			$('#call-in').hide();
-			$('#why-we-protest').show();
+		$('#1-1').click(function() {
+			$('#image').hide();
+			$('#1-1').css("font-weight", "bolder");
+			$('#1-2').css("font-weight", "bolder");
+			$('#answer').show();
+			$('#navigation').show();
+			$('body').css("background-image", "url('images/1-2.jpg')");
 		});
 
-		$('.3-2').click(function() {
-			$('body').css("background-image", "url('images/3-2.gif')");
-			$('#views-on-race').hide();
-			$('#translations').hide();
-			$('#call-in').hide();
-			$('#why-we-protest').hide();
+		$('#1-2').click(function() {
+			$('#image').hide();
+			$('#1-1').css("font-weight", "bolder");
+			$('#1-2').css("font-weight", "bolder");
+			$('#answer').show();
+			$('#navigation').show();
+			$('body').css("background-image", "url('images/1-2.jpg')");
 		});
-
-		$('.3-3').click(function() {
-			$('body').css("background-image", "url('images/3-3.gif')");
-			$('#views-on-race').hide();
-			$('#translations').hide();
-			$('#call-in').hide();
-			$('#why-we-protest').hide();
-		});
-
-		$('.3-4').click(function() {
-			$('body').css("background-image", "url('images/3-4.jpg')");
-			$('#views-on-race').hide();
-			$('#translations').show();
-			$('#call-in').show();
-			$('#why-we-protest').hide();
-		});
-
-		$('.3-5').click(function() {
-			$('body').css("background-image", "url('images/3-5.png')");
-			$('#views-on-race').hide();
-			$('#translations').hide();
-			$('#call-in').hide();
-			$('#why-we-protest').hide();
-		});
-
-		$('.3-6').click(function() {
-			$('body').css("background-image", "url('images/3-6.jpg')");
-			$('#views-on-race').hide();
-			$('#translations').hide();
-			$('#call-in').hide();
-			$('#why-we-protest').hide();
-		});
-
 	});
+
 
 
 </script>
 
 <footer>
-	Last updated: Jun 04 2020 &nbsp; | &nbsp; <a href="http://instagram.com/aliceyuanzhang">Contact</a>
+	Last updated: Jun 05 2020 &nbsp; | &nbsp; <a href="http://instagram.com/aliceyuanzhang" style="font-weight:bold; color: black" target="_blank">Contact</a>
 </footer>
 
 </html>

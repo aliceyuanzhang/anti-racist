@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html lang="en">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+<div id="page-wrap">
+
+<a href="index.html" style="text-decoration: none"><header>
+	<i>THE ANTI-RACIST POP QUIZ</i> 
+</header></a>
+
+
+<section>
+<h2>7. WHICH IS MORE IMPACTFUL FOR MAKING CHANGE?</h2>
+<br>
+<div class="options">
+	<div id="1-1" style="font-size: 22px; cursor: pointer"> Protesting </div>
+	<br>
+	<div id="1-2" style="font-size: 22px; cursor: pointer"> Voting </div>
+</div>
+
+<br>
+
+</section>
+
+<div id="answer"><br><br>
+	Both matter! Protesting raises public awareness, voting shapes local, state, and national governments that represent our interests, and proactively calling and petitioning helps ensure they take action. <br><br><br>
+</div><br>
+
+<div id="navigation" style="text-decoration: none; font-size: 24px; font-weight: bolder; font-family: sans-serif">
+<a href="q6.html" style="color: white">BACK</a> &nbsp;&nbsp; <a href="https://medium.com/@BarackObama/how-to-make-this-moment-the-turning-point-for-real-change-9fa209806067" style="color: white" target="_blank">?</a> &nbsp;&nbsp; <a href="q8.html" style="color: white"> NEXT </a>
+</div>
+
+</div>
+</body>
+
+
+
+<script>
+	$(document).ready(function() {
+		$('#answer').hide();
+		$('#navigation').hide();
+
+		$('#1-1').click(function() {
+			$('#image').hide();
+			$('#1-1').css("font-weight", "bolder");
+			$('#1-2').css("font-weight", "bolder");
+			$('#answer').show();
+			$('#navigation').show();
+			$('body').css("background-image", "url('images/1-2.jpg')");
+		});
+
+		$('#1-2').click(function() {
+			$('#image').hide();
+			$('#1-1').css("font-weight", "bolder");
+			$('#1-2').css("font-weight", "bolder");
+			$('#answer').show();
+			$('#navigation').show();
+			$('body').css("background-image", "url('images/1-2.jpg')");
+		});
+	});
+
+
+
+</script>
+
+<footer>
+	Last updated: Jun 05 2020 &nbsp; | &nbsp; <a href="http://instagram.com/aliceyuanzhang" style="font-weight:bold; color: black" target="_blank">Contact</a>
+</footer>
+
+</html>
